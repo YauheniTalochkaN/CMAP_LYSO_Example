@@ -1,0 +1,4 @@
+NUM_THREADs 10 // 1 is default
+NUM_BEAMs 1 // 1 is default
+SET_ENERGY e- 10 keV // kin energy
+VISIBLE 1 // 0 means unvisible tracks, 1 means visible tracks (default)
