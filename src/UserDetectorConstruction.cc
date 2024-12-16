@@ -40,7 +40,7 @@ MaterialProperties* UserDetectorConstruction::BuildProperties(TString name)
 {
 	MaterialProperties* mp = new MaterialProperties();
 	
-	TString folder = "/home/yauhenitalochka/mnt/Files/Projects/CMAP/data/";
+	TString folder = "../data/";
 
 	if(name == "Lu1.6Y0.4SiO5")
 	{
