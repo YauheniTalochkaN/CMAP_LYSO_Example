@@ -31,9 +31,6 @@ void UserDetectorConstruction::BuildGeometry()
 
 	geom->CloseGeometry();
 	geom = nullptr;
-
-	//RunManager::getInstance()->GetPhysicsList()->SetPeriodicBoundaries(TVector3(0,0,0), TVector3(100.0 * unit_nm, 100.0 * unit_nm, 100.0 * unit_nm));
-	//RunManager::getInstance()->GetPhysicsList()->SetElectricFieldStrength(1e6 * unit_V/unit_m * TVector3(1.0,0,0));
 }
 
 MaterialProperties* UserDetectorConstruction::BuildProperties(TString name)
