@@ -99,7 +99,7 @@ MaterialProperties* UserDetectorConstruction::BuildProperties(TString name)
 	    shell* up2F5sl2 = new shell("2F5/2", 0.0 * unit_eV);
 	    std::pair<TString,Double_t> nonrad_tau_2F7sl2[] = {std::make_pair("2F5/2", 1.0 * unit_ps)};
 	    shell* up2F7sl2 = new shell("2F7/2", 0.25 * unit_eV, nullptr, 0, nonrad_tau_2F7sl2, 1);
-	    std::pair<TString,Double_t> rad_tau_5d1[] = {std::make_pair("2F7/2", 80.0 * unit_ns), std::make_pair("2F5/2", 80.0 * unit_ns)};
+	    std::pair<TString,Double_t> rad_tau_5d1[] = {std::make_pair("2F7/2", 68.0 * unit_ns), std::make_pair("2F5/2", 97.14 * unit_ns)};
 	    std::pair<TString,Double_t> nonrad_tau_5d1[] = {std::make_pair("2F7/2", 1000.0 * unit_ns)};
 	    shell* up5d1 = new shell("5d1", 2.9 * unit_eV, rad_tau_5d1, 2, nonrad_tau_5d1, 1);
 	    Ce3p->SetLevel(up2F5sl2);
