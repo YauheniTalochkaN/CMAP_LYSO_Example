@@ -4,7 +4,7 @@
 
 class UserDetectorConstruction : public DetectorConstruction
 {
-	public:
+public:
 	UserDetectorConstruction();
 	~UserDetectorConstruction() override;
 	void BuildGeometry() override;

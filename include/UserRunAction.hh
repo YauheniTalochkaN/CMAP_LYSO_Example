@@ -4,7 +4,7 @@
 
 class UserRunAction : public RunAction
 {
-	public:
+public:
 	UserRunAction();
 	~UserRunAction() override;
 	void EndOfCurrentStepOfRun() override;

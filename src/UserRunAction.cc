@@ -13,7 +13,7 @@ UserRunAction::~UserRunAction()
 void UserRunAction::EndOfCurrentStepOfRun()
 {
 	/* int numtracks = RunManager::getInstance()->GetTrackPropagation()->SizeofTrackList();
-    for (int i = 0; i < numtracks; i++)
+    for (int i = 0; i < numtracks; ++i)
     {
         Track *track = RunManager::getInstance()->GetTrackPropagation()->GetTrack(i);
 		if((fabs(track->GetPostStepPoint().energy) < 5.0 * unit_eV) && (track->GetParticleName() == "h")) track->SetShouldBeKilled(true);
@@ -70,7 +70,7 @@ void UserRunAction::EndOfRun()
 	}
 
 	int numtracks = RunManager::getInstance()->GetTrackPropagation()->SizeofTrackList();
-	for (int i = 0; i < numtracks; i++)
+	for (int i = 0; i < numtracks; ++i)
 	{
 	    Track *track = RunManager::getInstance()->GetTrackPropagation()->GetTrack(i);
 

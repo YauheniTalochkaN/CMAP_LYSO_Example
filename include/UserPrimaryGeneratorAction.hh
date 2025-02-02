@@ -4,7 +4,7 @@
 
 class UserPrimaryGeneratorAction : public PrimaryGeneratorAction 
 {
-	public:
+public:
 	UserPrimaryGeneratorAction();
 	~UserPrimaryGeneratorAction() override;
 	void GeneratePrimaries() override;
