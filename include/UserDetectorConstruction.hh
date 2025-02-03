@@ -8,5 +8,5 @@ public:
 	UserDetectorConstruction();
 	~UserDetectorConstruction() override;
 	void BuildGeometry() override;
-    MaterialProperties* BuildProperties(TString);
+    MaterialProperties* BuildProperties(const TString &);
 };

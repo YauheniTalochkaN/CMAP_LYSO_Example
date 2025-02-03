@@ -33,7 +33,7 @@ void UserDetectorConstruction::BuildGeometry()
 	geom = nullptr;
 }
 
-MaterialProperties* UserDetectorConstruction::BuildProperties(TString name)
+MaterialProperties* UserDetectorConstruction::BuildProperties(const TString & name)
 {
 	MaterialProperties* mp = new MaterialProperties();
 	
