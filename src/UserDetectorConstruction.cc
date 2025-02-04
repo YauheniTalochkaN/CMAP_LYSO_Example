@@ -1,6 +1,6 @@
 #include "UserDetectorConstruction.hh"
 
-#define SIZE(x) (int)(sizeof(x)/sizeof(*x))
+#define SIZE(x) (size_t)(sizeof(x)/sizeof(*x))
 
 UserDetectorConstruction::UserDetectorConstruction() : DetectorConstruction()
 {
