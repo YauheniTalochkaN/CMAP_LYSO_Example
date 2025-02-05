@@ -17,5 +17,8 @@ void UserPrimaryGeneratorAction::GeneratePrimaries()
     primary_particle.momentum_direction = TVector3(1, 0, 0);
     primary_particle.point = TVector3(0, 0, 0);
     primary_particle.time = 0;
-    RunManager::getInstance()->GetTrackPropagation()->AddNewTrack(RunManager::getInstance()->GetPhysicsList()->CreateElectron(primary_particle));
+    
+    Track* track = RunManager::getInstance()->GetPhysicsList()->CreateElectron(primary_particle);
+    TString str = track->GetCreatorProcess();
+    track = nullptr;
 }
